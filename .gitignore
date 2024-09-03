@@ -3,7 +3,7 @@ __pycache__
 db.sqlite3
 media
 
-# Virtual environment
+# Virtual environment and variables
 env
 .env
 venv
