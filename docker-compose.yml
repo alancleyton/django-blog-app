@@ -1,0 +1,27 @@
+services:
+  db:
+    container_name: postgresql_db
+    image: postgres:16.4-alpine
+    restart: always
+    environment:
+      POSTGRES_USER: ${DB_USER}
+      POSTGRES_PASSWORD: ${DB_PASSWORD}
+      POSTGRES_DB: ${DB_NAME}
+    volumes:
+      - ./data/postgres/data:/var/lib/postgresql/data/
+    env_file:
+      - .env
+  web:
+    container_name: blogapp_web
+    build:
+      context: .
+    ports:
+      - 8000:8000
+    volumes:
+      - ./blogapp:/blogapp
+      - ./data/web/static:/data/web/static/
+      - ./data/web/media:/data/web/media/
+    env_file:
+      - .env
+    depends_on:
+      - db
