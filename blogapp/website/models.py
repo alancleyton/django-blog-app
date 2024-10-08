@@ -1,4 +1,5 @@
 from django.db import models
+from utils.model_validators import validate_image
 
 # Create your models here.
 
@@ -33,7 +34,8 @@ class WebsiteSetupModel(models.Model):
     show_footer = models.BooleanField(default=False)
     favicon = models.ImageField(
         upload_to='assets/favicon/%y/%m',
-        blank=True, default=''
+        blank=True, default='',
+        validators=[validate_image]
     )
 
     def __str__(self) -> str:
