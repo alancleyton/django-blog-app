@@ -1,0 +1,57 @@
+:root {
+  /* Fonts */
+  --font-regular: Georgia, 'Times New Roman', Times, serif;
+  --font-headings: Georgia, 'Times New Roman', Times, serif;
+  --font-mono: 'Courier New', Courier, monospace;
+
+  /* Colors */
+  --color-white: #ffffff;
+  ---color-black: #000000;
+  --color-primary: #45e0a8;
+  --color-primary-light: #7de9c2;
+  --color-primary-lighter: #b5f3dc;
+  --color-primary-dark: #309d76;
+  --color-primary-darker: #1c5a43;
+  --color-secondary: #6edbff;
+  --color-secondary-light: #9ae6ff;
+  --color-secondary-lighter: #c5f1ff;
+  --color-secondary-dark: #4d99b3;
+  --color-secondary-darker: #2c5866;
+  --color-dark: #333333;
+  --color-dark-light: #707070;
+  --color-dark-lighter: #adadad;
+
+  /* Font-Sizes */
+  --font-size-2xs: clamp(1.2rem, 1.092307692307692rem + 0.256410256410256vw, 1.4rem);
+  --font-size-xs: clamp(1.4rem, 1.292307692307692rem + 0.2564102564102566vw, 1.6rem);
+  --font-size-sm: clamp(1.6rem, 1.4923076923076923rem + 0.25641025641025633vw, 1.8rem);
+  --font-size-md: clamp(1.8rem, 1.6923076923076923rem + 0.25641025641025633vw, 2rem);
+  --font-size-lg: clamp(2rem, 1.7846153846153847rem + 0.5128205128205127vw, 2.4rem);
+  --font-size-xl: clamp(2.4rem, 1.969230769230769rem + 1.025641025641026vw, 3.2rem);
+  --font-size-2xl: clamp(3.2rem, 2.876923076923rem + 0.7692307692307687vw, 3.8rem);
+
+  --font-size-heading-1: clamp(3.8rem, 3.2615384615384615rem + 1.282051282051282vw, 4.8rem);
+  --font-size-heading-2: clamp(2.8rem, 1.938461538461538rem + 2.051282051282052vw, 4.4rem);
+  --font-size-heading-3: clamp(2.4rem, 1.969230769230769rem + 1.025641025641026vw, 3.2rem);
+  --font-size-heading-4: clamp(2.2rem, 1.8769230769230774rem + 0.7692307692307687vw, 2.8rem);
+  --font-size-heading-5: clamp(1.8rem, 1.476923076923077rem + 0.769230769230769vw, 2.4rem);
+  --font-size-heading-6: clamp(1.6rem, 1.2769230769230768rem + 0.7692307692307694vw, 2.2rem);
+
+   /* Line-Heights */
+  --line-height-regular: 1.5;
+  --line-height-headings: 1.2;
+  --line-height-mono: 1.2;
+
+  /* Spacings */
+  --spacing-2xs: 1.5rem;
+  --spacing-xs: 2rem;
+  --spacing-sm: 2.5rem;
+  --spacing-md: 3rem;
+  --spacing-lg: 4rem;
+  --spacing-xl: 5rem;
+  --spacing-2xl: 6rem;
+
+  /* max-width */
+  --max-w-grid: 120rem;
+  --max-w-post: 90rem;
+}
